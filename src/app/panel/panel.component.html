@@ -1,8 +1,11 @@
-<div>
+<div style="background-color: lightblue">
   panel
-  <app-users></app-users>
 </div>
-<div style="background-color: grey">
+<nav>
+  <a [routerLink]="['users']">users</a>
+  <a [routerLink]="['articles']">articles</a>
+</nav>
+<div style="background-color: lightgray">
   outlet
   <router-outlet></router-outlet>
 </div>
